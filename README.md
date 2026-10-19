@@ -143,7 +143,7 @@ Se evaluaron dos alternativas para los componentes críticos de **priorización 
 
 | Criterio | Alternativa A (Seleccionada) | Alternativa B |
 | :--- | :--- | :--- |
-| **Estructuras Empleadas** | `PriorityQueue` (Heap Binario) + Tabla Hash por tipo y zona (`HashMap`) | Lista lineal ordenada por prioridad + Lista simple de unidades |
+| **Estructuras Empleadas** | `PriorityQueue` (Heap Binario) | Lista lineal ordenada por prioridad + Lista simple de unidades |
 | **Inserción de incidentes** | $\mathcal{O}(\log n)$ | $\mathcal{O}(n)$ |
 | **Extracción del más prioritario** | $\mathcal{O}(\log n)$ | $\mathcal{O}(1)$ |
 | **Búsqueda de unidades libres** | $\mathcal{O}(1)$ tiempo promedio para filtrar candidatos por clave (zona/tipo) | $\mathcal{O}(U)$ donde $U$ es la cantidad de unidades en la flota |
