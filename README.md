@@ -147,12 +147,12 @@ Se evaluaron dos alternativas para los componentes críticos de **priorización 
 | **Inserción de incidentes** | $\mathcal{O}(\log n)$ | $\mathcal{O}(n)$ |
 | **Extracción del más prioritario** | $\mathcal{O}(\log n)$ | $\mathcal{O}(1)$ |
 | **Búsqueda de unidades libres** | $\mathcal{O}(1)$ tiempo promedio para filtrar candidatos por clave (zona/tipo) | $\mathcal{O}(U)$ donde $U$ es la cantidad de unidades en la flota |
-| **Complejidad Espacial** | $\mathcal{O}(n + U)$ (requiere memoria adicional para el índice hash) | $\mathcal{O}(n + U)$ (menor consumo auxiliar) |
+| **Complejidad Espacial** | $\mathcal{O}(n + U)$ | $\mathcal{O}(n + U)$ (menor consumo auxiliar) |
 | **Ventajas** | Altamente escalable; eficiente para un alto flujo continuo de llamadas y actualizaciones. | Lógica de implementación simple; sin costo de sincronización de índices. |
 | **Desventajas / Retos** | Exige mantener sincronizado el índice ante cualquier cambio de estado de una unidad. | Costosa degradación temporal a medida que crecen los incidentes en cola y la flota de unidades. |
 
 ### Fundamentación Técnica
-Se seleccionó la **Alternativa A** debido a que los sistemas de despacho operan en tiempo real bajo escenarios de estrés operativo. La combinación de un montículo binario (`PriorityQueue`) con un índice hash garantiza tiempos logarítmicos $\mathcal{O}(\log n)$ en la gestión de incidentes y accesos en tiempo constante $\mathcal{O}(1)$ para el filtrado de unidades, evitando búsquedas exhaustivas lineales $\mathcal{O}(U)$ al despachar.
+Se seleccionó la **Alternativa A** debido a que los sistemas de despacho operan en tiempo real bajo escenarios de estrés operativo. Un montículo binario (`PriorityQueue`) garantiza tiempos logarítmicos $\mathcal{O}(\log n)$ en la gestión de incidentes y accesos en tiempo constante $\mathcal{O}(1)$ para el filtrado de unidades, evitando búsquedas exhaustivas lineales $\mathcal{O}(U)$ al despachar.
 
 ---
 
