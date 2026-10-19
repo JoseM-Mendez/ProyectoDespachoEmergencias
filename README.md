@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Contexto y Formulación del Problema
+##  Contexto y Formulación del Problema
 
 En situaciones de emergencia, el tiempo transcurrido entre la recepción del reporte y la llegada de los recursos a la escena es crítico; en Ecuador, el estándar de respuesta óptimo para una ambulancia es de máximo **15 minutos**. 
 
@@ -21,7 +21,7 @@ Proveer una solución algorítmica orientada a ordenar la atención ante una sob
 
 ---
 
-## 🎯 Alcance del Sistema y Reglas del Negocio
+##  Alcance del Sistema y Reglas del Negocio
 
 El sistema se enfoca en la **clasificación, priorización, asignación algorítmica y monitoreo** de unidades de respuesta (ambulancias, bomberos, patrullas policiales). 
 
@@ -29,7 +29,7 @@ El sistema se enfoca en la **clasificación, priorización, asignación algorít
 
 ---
 
-## 🧩 Módulos Funcionales y Responsables
+##  Módulos Funcionales y Responsables
 
 | Módulo | Responsable(s) | Propósito y Operaciones Principales |
 | :--- | :--- | :--- |
@@ -41,7 +41,7 @@ El sistema se enfoca en la **clasificación, priorización, asignación algorít
 
 ---
 
-## 🏗️ Arquitectura y Modelo de Clases (UML)
+##  Arquitectura y Modelo de Clases (UML)
 
 El diseño orientado a objetos contempla las siguientes clases principales:
 
@@ -137,7 +137,7 @@ classDiagram
 
 ---
 
-## ⚖️ Análisis y Selección de Estructuras de Datos
+##  Análisis y Selección de Estructuras de Datos
 
 Se evaluaron dos alternativas para los componentes críticos de **priorización de incidentes** y **búsqueda de unidades disponibles**:
 
@@ -167,7 +167,7 @@ Se seleccionó la **Alternativa A** debido a que los sistemas de despacho operan
 
 ---
 
-## 📚 Referencias Bibliográficas
+##  Referencias Bibliográficas
 
 - El Universo. (2024, septiembre 28). *¿Qué pasará con Segura EP ahora que no receptará ni coordinará llamadas de emergencia en Guayaquil?* https://www.eluniverso.com/guayaquil/comunidad/que-pasara-con-segura-ep-ahora-que-no-receptara-ni-coordinara-llamadas-de-emergencia-en-guayaquil-nota/
 - Mena Medrano, L. (2023). *Determinación de factores y propuesta de mejora para reducir el tiempo óptimo de respuesta en emergencias de la ambulancia de atención prehospitalaria del Hospital General del Sur de Quito IESS durante el periodo enero - diciembre 2022* (Tesis de maestría, UDLA). http://dspace.udla.edu.ec/bitstream/33000/15358/1/UDLA-EC-TMSP-2023-103.pdf
